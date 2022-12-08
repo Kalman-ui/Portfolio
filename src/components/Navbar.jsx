@@ -3,29 +3,32 @@ import { close, logo, menu } from '../assets';
 import { navLinks } from '../constants';
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false); // Sets toggle between mobile and regular. 
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[124px] h-[32px]"/>
+      <img src={logo} alt="hoobank" className="w-[132px] h-[50px]" />
+      <h1 className="flex-1 font-popins font-semibold ss:text-[23px] text-[52px] text-white">
+        <p className="text-gradient">Marcus Kalman Portfolio</p>
+      </h1>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
-          <li            
+          <li
             key={nav.id}
-            className={`font.poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10' } text-white`}
-            >
-              <a href={`#${nav.id}`}>
-                {nav.title}
-              </a>
+            className={`font.poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}
+          >
+            <a href={`#${nav.id}`}>
+              {nav.title}
+            </a>
           </li>
         ))}
       </ul>
       <div className="sm:hidden flex flex-1 justify-end items-center">
-        <img 
-        src={toggle ? close : menu}
-        alt="menu" className="w-[28px] h-[28px] object-container"
-        onClick={() => setToggle((prev) => !prev)}
-      />
+        <img
+          src={toggle ? close : menu}
+          alt="menu" className="w-[28px] h-[28px] object-container"
+          onClick={() => setToggle((prev) => !prev)}
+        />
         <div
           className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >

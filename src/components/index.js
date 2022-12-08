@@ -6,10 +6,13 @@ import Clients from './Clients';
 import CTA from './CTA';
 import FeedbackCard from './FeedbackCard';
 import Footer from './Footer';
-import GetStarted from './GetStarted';
+import ProjectsHref from './ProjectsHref';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import Stats from './Stats';
 import Testimonials from './Testimonials';
+import ResumeHref from './ResumeHref';
+import ContactHref from './ContactHref';
+import SocialsHref from './SocialsHref';
 
-export {Billing, Business, Testimonials, Stats, GetStarted, Navbar, Hero, Footer, FeedbackCard, Clients, CardDeal, CTA, Button}
+export {Billing, Business, Testimonials, Stats, SocialsHref, ContactHref, ProjectsHref, ResumeHref, Navbar, Hero, Footer, FeedbackCard, Clients, CardDeal, CTA, Button}

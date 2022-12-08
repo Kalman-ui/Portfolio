@@ -23,19 +23,29 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import file from "./file.svg";
+import me from "./me.jpg";
+import projects from "./projects.svg";
+import contact from "./contact.svg";
+import social from "./social.svg";
 
 export {
   airbnb,
   bill,
   binance,
+  social,
   card,
   coinbase,
   dropbox,
   logo,
+  me,
   quotes,
+  contact,
   robot,
+  projects,
   send,
   shield,
+  file,
   star,
   menu,
   close,
