@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Billing, Business, Testimonials, Stats, GetStarted, Navbar, Hero, Footer, Clients, CardDeal, CTA, Button} from './components';
+import {Billing, Business, Testimonials, Stats, ProjectsHref, Navbar, Hero, Footer, Clients, CardDeal, CTA, Button} from './components';
 
 import styles from './style';
 
